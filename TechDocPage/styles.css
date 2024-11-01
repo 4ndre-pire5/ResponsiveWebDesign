@@ -1,0 +1,121 @@
+nav {
+    position:fixed;
+    min-width: 290px;
+    top: 0;
+    left:0;
+    height:100%;
+    width: 300px;
+    font-family: Arial;
+    border-right: double 1px black;
+}
+
+nav > header {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 1.8em;
+    border-bottom: solid 1px black;
+}
+
+nav > ul {
+   height:88%;
+   padding: 0;
+   overflow: auto;
+   overflow-x: hidden;
+}
+
+nav > ul > li {
+    height: 40px;
+    margin: 0;
+    padding-left: 35px;
+    align-items: center;
+    display:flex;
+    border-bottom: solid 1px black;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li:last-child {
+    border: 0;
+}
+
+.main-section {
+    margin-left: 320px;
+}
+
+.main-section header {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.6em;
+    padding-top: 20px;
+}
+
+.main-section p {
+    font-family: Arial;
+    padding-left: 20px;
+    line-height: 140%;
+}
+
+#Introduction ul li,
+#What_you_should_already_know ul li,
+#Data_types ul li,
+#while_statement ul li,
+#Function_declarations ul li,
+#Reference ul li {
+    font-family: Arial;
+    margin-left: 40px;
+    padding-bottom: 10px;
+}
+
+.data_types {
+    list-style-type: circle;
+    margin-top: 10px;
+}
+
+.code, .code_2, .code_3 {
+    height: var(--code-height);
+    background-color: rgb(245, 242, 242);
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-left: 15px;
+}
+
+.code {
+    --code-height: 50px;
+}
+
+.code_2 {
+    --code-height: 80px;
+}
+
+.code_3 {
+    --code-height: 100px;
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 500px;
+    }  
+}
+
+@media (min-width: 769px) and (max-width: 1199px) {
+    body {
+        width: 800px;
+    } 
+}
+
+
+
+
+
+
+
+
+
+
+
