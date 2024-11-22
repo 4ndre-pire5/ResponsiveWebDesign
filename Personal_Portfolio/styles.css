@@ -78,6 +78,42 @@ a {
 
 }
 
+.projects-section h1 {
+    color: var(--color-text);
+    text-align: center;
+    font-size: 3.0rem;
+    font-family: Arial, sans-serif;  
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+hr {
+    border: 1px solid white;
+    width: 700px;
+    margin:auto; 
+    margin-bottom: 4rem;  
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
 .contact-section h1 {
     color: var(--color-text);
     text-align: center;
@@ -119,3 +155,19 @@ footer {
 footer p {
     color: var(--color-text); 
 }
+
+@media (max-width: 768px) {
+    /* Estilos específicos para telas menores */
+    .projects-grid {
+      display: flex;
+      flex-direction: column; /* Empilha os projetos */
+    }
+  
+    .project-tile {
+      width: 100%; /* Cada projeto ocupa toda a largura da tela */
+    }
+  
+    .social-icons {
+      flex-direction: column; /* Empilha os ícones sociais */
+    }
+  }
